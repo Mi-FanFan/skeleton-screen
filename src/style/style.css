@@ -1,0 +1,136 @@
+*{
+  box-sizing: border-box;
+}
+p{
+  margin:0;
+}
+.skeleton{
+  background-color: #fff;
+}
+.ss-container{
+  width: 1200px;
+  height:100%;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.ss-container-left{
+  width:63%;
+}
+.ss-container-right{
+  width:31.6%;
+}
+.loading-content{
+  padding:24px;
+}
+.loading{
+  user-select: none;
+  padding:0;
+  display: flex;
+  justify-content: space-between;
+}
+.loading-block-small{
+  margin: 3% 1% 0;
+  height: 14px;
+  border-radius:2px;
+}
+.loading-block{
+  margin: 3% 1% 0;
+  height: 22px;
+  border-radius:2px;
+}
+.loading-block-title{
+  display: inline-block;
+  margin: 3% 1% 0;
+  height: 30px;
+  border-radius:2px;
+}
+.animation{
+  background: linear-gradient(90deg, rgba(207, 216, 220, .2), rgba(207, 216, 220, .4), rgba(207, 216, 220, .2));
+  animation: skeleton-loading 1.4s ease infinite;
+  background-size: 600% 600%;
+}
+.ss-slider{
+  width:760px;
+  height: 380px;
+}
+.ss-list{
+  margin-top:30px;
+}
+.ss-list__item{
+  min-height: 200px;
+  margin-bottom:20px;
+  display: flex;
+  justify-content: space-between;
+}
+.ss-item__left {
+  width: 32%;
+  height: 200px;
+  margin-left: 3%;
+}
+.ss-item__right{
+  width:61%;
+  height: 200px;
+  display: inline-flex;
+  flex-direction: column;
+}
+.ss-hot-word{
+  min-height: 460px;
+}
+.ss-hot-word p{
+  margin:10px 0;
+}
+.ss-loading-box{
+  margin-bottom: 30px;
+}
+.ss-edit__item{
+  height: 80px;
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+.ss-edit-left{
+  width:120px;
+  height: 100%;
+}
+.ss-edit-right{
+  width: 240px;
+}
+.ss-product{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ss-product__item{
+  width:160px;
+  height: 140px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.ss-product__item:nth-child(2n){
+  margin-right: 0;
+}
+.ss-product-top{
+  width:160px;
+  height: 100px;
+}
+.ss-article__item{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.ss-article-left{
+  width:60px;
+  height: 60px;
+}
+.ss-article-right{
+  width:300px;
+}
+@keyframes skeleton-loading {
+  0%,
+  100% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
